@@ -1,15 +1,19 @@
-# Source - https://stackoverflow.com/a/54701434
-# Posted by Robert Hafner, modified by community. See post 'Timeline' for change history
-# Retrieved 2025-11-14, License - CC BY-SA 4.0
-
 [build-system]
-requires = ["setuptools", "setuptools-scm"]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
-dependencies = [
-    'OceansEnv @ git+https://github.com/james-stewart-808/OceansEnv',
+name = "my_modeule"
+version = "1.0.0"
+description = "Provide some useful stuff"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
 ]
+dependencies = ["numpy"]
 
-#[project.optional-dependencies]
-#dev = ['ExtraExample @ git+ssh://git@github.com/example_org/ExtraExample.git']
+[project.urls]
+Homepage = "https://github.com/your_username/your_custom_project"
